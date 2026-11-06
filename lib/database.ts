@@ -14,6 +14,7 @@ export class ContactDatabase {
 }
 let db:ContactDatabase|undefined;
 export function getDatabase(){
- if(!process.env.TURSO_DATABASE_URL||!process.env.TURSO_AUTH_TOKEN)return undefined;
- return db??=new ContactDatabase(createClient({url:process.env.TURSO_DATABASE_URL,authToken:process.env.TURSO_AUTH_TOKEN}));
+ const authToken=process.env.TURSO_AUTH_TOKEN||process.env.TURSO_DATABASE_TURSO_AUTH_TOKEN;
+ if(!process.env.TURSO_DATABASE_URL||!authToken)return undefined;
+ return db??=new ContactDatabase(createClient({url:process.env.TURSO_DATABASE_URL,authToken}));
 }

@@ -4,7 +4,7 @@ export type PageContent = {title: string; description: string; indexable?: boole
 // Legal identity stays indexable; privacy notices and illustrative studies remain accessible.
 export const pages: Record<string, PageContent> = {
   '/': {
-    title: 'Renovim Sàrl | Peinture, plâtrerie et rénovation en Suisse romande',
+    title: 'Renovim Sàrl | Peinture, plâtrerie et rénovation',
     description: 'Renovim Sàrl, entreprise familiale au Mont-sur-Lausanne : peinture, plâtrerie et rénovation en Suisse romande. Près de 25 ans de savoir-faire. Devis gratuit.',
   },
   '/savoir-faire': {

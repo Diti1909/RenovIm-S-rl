@@ -1,5 +1,7 @@
 # RenovIm — dossier GitHub / Vercel
 
+> Mise à jour SEO du 27 novembre 2026 : voir le [compte rendu et les contrôles](docs/SEO-2026-11-27.md). Les instructions de déploiement initial ci-dessous sont conservées à titre de référence.
+
 Version préparée le 6 novembre 2026. Le site existant, ses images, ses polices et ses interactions sont inclus. Le formulaire a été adapté pour Vercel et Resend. Ce dossier ne contient aucune clé privée.
 
 ## 1. Mettre les fichiers dans GitHub

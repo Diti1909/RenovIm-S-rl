@@ -1,4 +1,15 @@
 import type {Metadata} from 'next';
+import {company} from '../lib/company';
 import './globals.css';
-export const metadata:Metadata={title:'RenovIm — Peinture, plâtrerie & rénovation en Suisse, depuis le canton de Vaud',description:'Un nouvel espace. Le même chez-vous. Près de 25 ans de métier et une organisation moderne pour vos travaux en Suisse, depuis le canton de Vaud.',icons:{icon:'/favicon.svg',shortcut:'/favicon.svg'}};
-export default function RootLayout({children}:{children:React.ReactNode}){return <html lang="fr-CH"><body>{children}</body></html>}
+
+// Canonicals are defined by each page, never inherited from the root layout.
+export const metadata: Metadata = {
+  metadataBase: new URL(company.url),
+  title: company.name,
+  applicationName: company.name,
+  icons: {icon: '/favicon.svg', shortcut: '/favicon.svg'},
+};
+
+export default function RootLayout({children}: {children: React.ReactNode}) {
+  return <html lang="fr-CH"><body>{children}</body></html>;
+}
